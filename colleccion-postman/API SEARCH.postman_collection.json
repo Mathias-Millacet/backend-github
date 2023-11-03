@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "4393ccb5-6b6b-45d0-b9d2-d03be8448c7e",
+		"name": "API SEARCH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30636734"
+	},
+	"item": [
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Leer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
