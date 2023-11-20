@@ -43,7 +43,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:4001/api/searches/65443173460f4969d04ab373",
+					"raw": "localhost:4001/api/searches/654428b1460f4969d04ab371",
 					"host": [
 						"localhost"
 					],
@@ -51,7 +51,7 @@
 					"path": [
 						"api",
 						"searches",
-						"65443173460f4969d04ab373"
+						"654428b1460f4969d04ab371"
 					]
 				}
 			},
@@ -70,7 +70,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"_id\": \"6558186b6fdca47fa7e89244\",\r\n    \"searchTerm\": \"Test89955\",\r\n    \"results\": [\r\n        {\r\n            \"id\": 20,\r\n            \"title\": \"Actulizando\",\r\n            \"description\": \"Descripción del resultado 1\"\r\n        },\r\n        {\r\n            \"id\": 6,\r\n            \"title\": \"Resultado 2\",\r\n            \"description\": \"Descripción del resultado 2\"\r\n        }\r\n    ],\r\n    \"timestamp\": \"2023-11-02T14:30:00.000Z\",\r\n    \"__v\": 0\r\n}",
+					"raw": "{\r\n     \"searchTerm\": \"Ejemplo de búsqueda\",\r\n     \"timestamp\": \"2023-11-02T14:30:00.000Z\",\r\n        \"results\": [ {\r\n                \"id\": 2,\r\n                \"title\": \"Resultado 2\",\r\n                \"description\": \"Descripción del resultado 2\",\r\n                \"avatar_url\": \"\",\r\n                \"login\": \"\",\r\n                \"location\": \"\",\r\n                \"followers\": \"\",\r\n                \"following\": \"\"\r\n            }]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -98,7 +98,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"_id\": \"654427cf460f4969d04ab36d\",\r\n    \"searchTerm\": \"Test 2\",\r\n    \"results\": [\r\n        {\r\n            \"id\": 1,\r\n            \"title\": \"Resultado 5\",\r\n            \"description\": \"Descripción del resultado 1\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"title\": \"Resultado 2\",\r\n            \"description\": \"Descripción del resultado 2\"\r\n        }\r\n    ],\r\n    \"timestamp\": \"2023-11-02T14:30:00.000Z\",\r\n    \"__v\": 0",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,7 +106,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:4001/api/searches/",
+					"raw": "localhost:4001/api/searches/654427cf460f4969d04ab36d",
 					"host": [
 						"localhost"
 					],
@@ -114,7 +114,7 @@
 					"path": [
 						"api",
 						"searches",
-						""
+						"654427cf460f4969d04ab36d"
 					]
 				}
 			},
