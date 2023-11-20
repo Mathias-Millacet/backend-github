@@ -1,12 +1,12 @@
 import express, { Application } from "express";
 import mongoose from "mongoose";
 import searchRoutes from "../routes/search.routes";
+import bodyParser from "body-parser";
 
 const app: Application = express();
-const PORT = process.env.PORT || 4000;
 
 // Conexión a la base de datos
-mongoose.connect("mongodb://localhost:27017", {
+mongoose.connect("mongodb://127.0.0.1:27017", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   serverSelectionTimeoutMS: 5000,
@@ -17,13 +17,10 @@ db.on("error", console.error.bind(console, "Error de conexión a MongoDB:"));
 db.once("open", () => {
   console.log("Conexion exitosa a MongoDB");
 });
-
 app.use(express.json());
+app.use(bodyParser.json());
 
 // Rutas
 app.use("/api", searchRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Servidor en ejecución en el puerto ${PORT}`);
-});
 export default app;

@@ -3,15 +3,18 @@ import SearchService from "../services/search.service";
 
 class SearchController {
   async createSearch(req: Request, res: Response) {
+    console.log("Esto es el body", req.body);
     try {
       const newSearch = await SearchService.createSearch(req.body);
       res.status(201).json(newSearch);
     } catch (error) {
-      res.status(500).json({ error: "Error al crear la búsqueda." });
+      console.error("Error al crear la búsqueda:", error);
+      res.status(500).json({ error: "Error interno al crear la búsqueda." });
     }
   }
 
   async getAllSearches(_req: Request, res: Response) {
+    console.log("prueba");
     try {
       const searches = await SearchService.getAllSearches();
       res.status(200).json(searches);
