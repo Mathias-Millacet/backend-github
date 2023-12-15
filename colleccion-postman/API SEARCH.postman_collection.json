@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "4393ccb5-6b6b-45d0-b9d2-d03be8448c7e",
+		"name": "API SEARCH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30636734"
+	},
+	"item": [
+		{
+			"name": "All Searches",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/searches",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"searches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4001/api/searches/654428b1460f4969d04ab371",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"searches",
+						"654428b1460f4969d04ab371"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Search",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"searchTerm\": \"Ejemplo de búsqueda\",\r\n     \"timestamp\": \"2023-11-02T14:30:00.000Z\",\r\n        \"results\": [ {\r\n                \"id\": 2,\r\n                \"title\": \"Resultado 2\",\r\n                \"description\": \"Descripción del resultado 2\",\r\n                \"avatar_url\": \"\",\r\n                \"login\": \"\",\r\n                \"location\": \"\",\r\n                \"followers\": \"\",\r\n                \"following\": \"\"\r\n            }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/search",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Search by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": \"654427cf460f4969d04ab36d\",\r\n    \"searchTerm\": \"Test 2\",\r\n    \"results\": [\r\n        {\r\n            \"id\": 1,\r\n            \"title\": \"Resultado 5\",\r\n            \"description\": \"Descripción del resultado 1\"\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"title\": \"Resultado 2\",\r\n            \"description\": \"Descripción del resultado 2\"\r\n        }\r\n    ],\r\n    \"timestamp\": \"2023-11-02T14:30:00.000Z\",\r\n    \"__v\": 0",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/searches/654427cf460f4969d04ab36d",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"searches",
+						"654427cf460f4969d04ab36d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Search by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4001/api/searches/",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"searches",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
